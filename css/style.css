@@ -1,0 +1,130 @@
+@keyframes feBlend {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-color: whitesmoke;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  width: 20rem;
+  height: 29rem;
+  border: 1px solid black;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 10px;
+  box-shadow: 1px 3px 2px 1px black;
+}
+.movie-card:hover {
+  transition: 2s;
+  width: 20.1rem;
+  height: 29.2rem;
+  padding: 2px;
+  box-shadow: 2px 2px 3px 2px black;
+  animation: feBlend 0.6s ease;
+  transform: scale(1.08);
+}
+
+.movie-card-img {
+  width: 320px;
+  height: 380px;
+}
+.img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.book-mark-icon:hover {
+  cursor: pointer;
+}
+.book-marked-item {
+  display: none;
+}
+.movie-title {
+  text-align: center;
+}
+.title-div {
+  font-family: sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+.popular-movies {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 2px 3px 4px #000000db;
+  border-radius: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-color: gray;
+  scrollbar-width: thin;
+}
+
+.book-mark-icon {
+  font-size: 20px;
+}
+.trending-movies {
+  background-color: white;
+  box-shadow: 1px 2px 3px 4px #000000db;
+  border-radius: 10px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-color: gray;
+  scrollbar-width: thin;
+}
+.latest-trailer {
+  display: flex;
+  overflow-x: scroll;
+  background-color: white;
+  box-shadow: 1px 2px 3px 4px #000000db;
+  border-radius: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-color: gray;
+  scrollbar-width: thin;
+}
+.sub-list {
+  display: none;
+}
+.drop-down-ul a {
+  color: black;
+  text-decoration: none;
+}
+.drop-down-ul {
+  font-weight: 600;
+  list-style: none;
+  font-family: sans-serif;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px 20px;
+  width: 70px;
+}
+.more-icon {
+  text-align: center;
+  font-size: 10px;
+  background-color: gainsboro;
+  width: 30px;
+  border-radius: 5px;
+}
+.more-icon:hover {
+  cursor: pointer;
+  background-color: ghostwhite;
+}
+.drop-down-menu:focus ~ .more-icon {
+  max-height: 400px;
+}
