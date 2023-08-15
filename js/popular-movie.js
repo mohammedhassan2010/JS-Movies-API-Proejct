@@ -28,7 +28,7 @@ async function displayMovieList() {
         
         
         <div class="movie-card-img">
-        <a href="movie-details/index.html?id=${movie.id}">
+        <a href="../movie-details/index.html?id=${movie.id}">
         <img class="img" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="">
         </a>
         <h1 class="movie-title">${movie.title}</h1>

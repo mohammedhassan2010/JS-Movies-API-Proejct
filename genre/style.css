@@ -1,0 +1,66 @@
+@keyframes feBlend {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+.genre-movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.movie-card {
+  width: 20rem;
+  height: 29rem;
+  border: 1px solid black;
+  font-family: sans-serif;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 10px;
+  box-shadow: 1px 3px 2px 1px black;
+}
+.movie-card:hover {
+  transition: 2s;
+  padding: 2px;
+  box-shadow: 2px 2px 3px 2px black;
+  animation: feBlend 0.6s ease;
+  transform: scale(1.05);
+}
+
+.movie-card-img {
+  width: 320px;
+  height: 380px;
+}
+.img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.book-mark-icon:hover {
+  cursor: pointer;
+}
+.book-marked-item {
+  display: none;
+}
+.movie-title {
+  text-align: center;
+  font-size: 24px;
+}
+.title-div {
+  font-family: sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}

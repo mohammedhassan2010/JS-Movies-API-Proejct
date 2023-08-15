@@ -1,0 +1,23 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+img {
+  border-radius: 10px;
+  width: 30%;
+  justify-self: flex-end;
+}
+p {
+  font-size: 20px;
+  width: 20%;
+}
+h1 {
+  text-align: center;
+}
+.movie-card-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
