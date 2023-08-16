@@ -4,37 +4,13 @@ body {
   justify-content: space-between;
   font-family: sans-serif;
 }
-.img-div {
-  border-radius: 10px;
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
 .img {
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 30%;
+  justify-self: flex-end;
 }
-.h1 {
-  display: flex;
-  justify-content: center;
-}
-.text-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.movie-overview {
-  text-align: center;
+p {
   font-size: 20px;
-
-  width: 60%;
-  margin: 10px;
-}
-.movie-title {
-  text-align: center;
 }
 h1 {
   text-align: center;
@@ -44,12 +20,6 @@ h1 {
   margin: 5px;
   width: 100%;
   justify-content: space-between;
-}
-.movie-card {
-  display: flex;
-  margin: 5px;
-  width: 100%;
-  justify-content: space-around;
 }
 .actor-name {
   font-size: 20px;
@@ -77,4 +47,30 @@ h1 {
   font-family: sans-serif;
   width: 60px;
   cursor: pointer;
+}
+.text-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.actor-overview {
+  width: 50%;
+}
+.actor-card {
+  display: flex;
+  margin: 5px;
+  width: 100%;
+  justify-content: space-around;
+}
+.img-div {
+  border-radius: 10px;
+  width: 300%;
+  height: 300%;
+}
+.img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

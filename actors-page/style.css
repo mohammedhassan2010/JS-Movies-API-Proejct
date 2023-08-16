@@ -1,22 +1,15 @@
-@keyframes feBlend {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 body {
   background-color: whitesmoke;
 }
-.popular-movie {
+.actor-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
-.movie-card {
+.actor-card {
   width: 20rem;
-  height: 30rem;
+  height: 29rem;
   border: 1px solid black;
   font-family: sans-serif;
   border-radius: 10px;
@@ -24,17 +17,15 @@ body {
   margin: 10px;
   box-shadow: 1px 3px 2px 1px black;
 }
-.movie-card:hover {
+.actor-card:hover {
   transition: 2s;
-  width: 20.1rem;
-  height: 30.2rem;
   padding: 2px;
   box-shadow: 2px 2px 3px 2px black;
-  animation: feBlend 0.6s forwards;
-  transform: scale(1.08);
+  animation: feBlend 0.6s ease;
+  transform: scale(1.05);
 }
 
-.movie-card-img {
+.actor-card-img {
   width: 320px;
   height: 380px;
 }
@@ -45,24 +36,8 @@ body {
   width: 100%;
   object-fit: cover;
 }
-.book-mark-icon:hover {
-  cursor: pointer;
-}
 
-.book-marked-item {
-  display: none;
-}
-.movie-title {
+.actor-title {
   text-align: center;
-  font-size: 1.7rem;
-}
-.title-div {
-  font-family: sans-serif;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.book-mark-icon {
-  font-size: 20px;
+  font-size: 23px;
 }

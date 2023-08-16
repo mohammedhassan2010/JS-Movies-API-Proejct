@@ -1,7 +1,7 @@
 async function getMovie() {
   try {
     const response = await fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=f74237cdfddfad42cc312032905ed050",
+      "https://api.themoviedb.org/3/movie/upcoming?api_key=f74237cdfddfad42cc312032905ed050",
     );
 
     const data = await response.json();
@@ -12,15 +12,12 @@ async function getMovie() {
   }
 }
 
-const popularMovie = document.querySelector(".popular-movie");
 async function displayMovieList() {
   try {
     const movieData = await getMovie();
-
-    console.log(movieData);
-
+    const moviesList = document.querySelector(".movies-page");
     movieData.results.map((movie) => {
-      popularMovie.innerHTML += `
+      moviesList.innerHTML += `
         
         <div class="movie-card-div"> 
           <div class="book-mark">
@@ -41,13 +38,12 @@ async function displayMovieList() {
         
         </div>
         `;
-
       // ☆★
     });
 
     let bookmarkedItem;
     const bookMark = Array.from(document.querySelectorAll(".book-mark"));
-    console.log(bookMark);
+
     bookMark.forEach((item) => {
       item.addEventListener("click", () => {
         item.textContent = "★";

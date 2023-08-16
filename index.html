@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- <div data-include="./navbar"></div> -->
     <nav>
       <div class="more-icon">
         <h1>☰</h1>
@@ -30,17 +31,32 @@
       </div>
       <div class="main-list">
         <ul class="main-ul">
-          <li class="main-li">Home</li>
+          <a href="./index.html">
+            <li class="main-li">Home</li>
+          </a>
           <li class="main-li , drop-down-li">
             Genre˅
             <div class="sub-list-div">
               <ul class="sub-drop-down-ul"></ul>
             </div>
           </li>
-          <li class="main-li">Actor</li>
+          <a href="./actors-page/index.html">
+            <li class="main-li">Actor</li>
+          </a>
+          <a href="./movies-page/index.html">
+            <li class="main-li">Movies</li>
+          </a>
           <li class="main-li">About</li>
-          <li class="main-li">Book Mark</li>
+          <li class="main-li book-mark-page">Book Mark</li>
         </ul>
+      </div>
+      <div class="search-box">
+        <input
+          type="search"
+          onkeyup="searchFunc()"
+          class="search-input"
+          placeholder="search"
+        />
       </div>
     </nav>
 
@@ -59,13 +75,11 @@
       <!-- <section class="latest-trailer"></section> -->
     </div>
     <footer>
-      <a href="http://127.0.0.1:5500/popular-movies/index.html">Popular</a>
-      <a href="http://127.0.0.1:5500/top-rated/index.html">Top Rated</a>
-      <a href="http://127.0.0.1:5500/now-playing/index.html">Now Playing</a>
-      <a href="http://127.0.0.1:5500/Upcoming-movie/index.html"
-        >Upcoming Movies</a
-      >
-      <a href="http://127.0.0.1:5500/index.html">Home page </a>
+      <a href="./popular-movies/index.html">Popular</a>
+      <a href="./top-rated/index.html">Top Rated</a>
+      <a href="./now-playing/index.html">Now Playing</a>
+      <a href="./Upcoming-movie/index.html">Upcoming Movies</a>
+      <a href="./index.html">Home page </a>
 
       <a href="https://www.google.com">@copyRightSaved</a>
     </footer>

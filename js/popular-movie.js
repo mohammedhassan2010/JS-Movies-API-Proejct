@@ -51,7 +51,7 @@ async function displayMovieList() {
         bookmarkedItem = document.createElement("div");
         bookmarkedItem.classList.add("book-marked-item");
         bookmarkedItem.innerHTML = item.nextElementSibling.outerHTML;
-        movieList.appendChild(bookmarkedItem);
+        document.body.appendChild(bookmarkedItem);
       });
     });
   } catch (error) {

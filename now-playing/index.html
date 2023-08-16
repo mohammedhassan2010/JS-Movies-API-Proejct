@@ -3,15 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
+    <nav>
+      <div class="more-icon">
+        <h1>☰</h1>
+      </div>
+
+      <div class="sub-list">
+        <ul class="drop-down-ul">
+          <a href="../popular-movies/index.html">
+            <li>popular</li>
+          </a>
+          <a href="../top-rated/index.html">
+            <li>top rated</li>
+          </a>
+          <a href="../now-playing/index.html">
+            <li>now playing</li>
+          </a>
+          <a href="../Upcoming-movie/index.html">
+            <li>upcoming</li>
+          </a>
+        </ul>
+      </div>
+      <div class="main-list">
+        <ul class="main-ul">
+          <a href="../index.html">
+            <li class="main-li">Home</li>
+          </a>
+          <li class="main-li , drop-down-li">
+            Genre˅
+            <div class="sub-list-div">
+              <ul class="sub-drop-down-ul"></ul>
+            </div>
+          </li>
+          <a href="./actors-page/index.html">
+            <li class="main-li">Actor</li>
+          </a>
+          <a href="../movies-page/index.html">
+            <li class="main-li">Movies</li>
+          </a>
+          <li class="main-li">About</li>
+          <li class="main-li book-mark-page">Book Mark</li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <input
+          type="search"
+          onkeyup="searchFunc()"
+          class="search-input"
+          placeholder="search"
+        />
+      </div>
+    </nav>
     <div class="now-playing">
       <div class="title-div">
         <h1>Now Playing</h1>
       </div>
     </div>
+    <footer>
+      <a href="./popular-movies/index.html">Popular</a>
+      <a href="./top-rated/index.html">Top Rated</a>
+      <a href="./now-playing/index.html">Now Playing</a>
+      <a href="./Upcoming-movie/index.html">Upcoming Movies</a>
+      <a href="./index.html">Home page </a>
+
+      <a href="https://www.google.com">@copyRightSaved</a>
+    </footer>
     <script src="now-playing.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/genre.js"></script>
   </body>
 </html>
